@@ -15,6 +15,12 @@ public class Biblioteca {
         carti = new ArrayList<>();
     }
 
+    public void removeBook(Carte carte)
+    {
+        carti.remove(carte);
+    }
+
+
     public void addCarte(Carte c)
     {
         carti.add(c);
