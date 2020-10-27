@@ -5,6 +5,7 @@ import java.util.Collections;
 
 public class Biblioteca {
     private ArrayList<Carte> carti;
+    private ArrayList<Utilizator> users;
 
     public void sort()
     {
@@ -13,6 +14,7 @@ public class Biblioteca {
 
     public Biblioteca() {
         carti = new ArrayList<>();
+        users = new ArrayList<>();
     }
 
     public void removeBook(Carte carte)
@@ -20,6 +22,9 @@ public class Biblioteca {
         carti.remove(carte);
     }
 
+    public void addUser(Utilizator u){
+        users.add(u);
+    }
 
     public void addCarte(Carte c)
     {
