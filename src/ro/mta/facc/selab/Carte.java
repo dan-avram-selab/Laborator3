@@ -5,6 +5,14 @@ public class Carte implements Comparable<Carte> {
     private String autor;
     private int nrPagini;
 
+    public void setTitlu(String titlu) {
+        this.titlu = titlu;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
     public String getTitlu() {
         return titlu;
     }
