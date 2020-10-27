@@ -5,6 +5,18 @@ public class Carte implements Comparable<Carte> {
     private String autor;
     private int nrPagini;
 
+    public String getTitlu() {
+        return titlu;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public int getNrPagini() {
+        return nrPagini;
+    }
+
     @Override
     public int compareTo(Carte o) {
         if (this.nrPagini < o.nrPagini)
